@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Author: Joshua Andrews -->
+<!-- Course: CIS-376/University of North Alabama -->
+<html lang="en">
+	<head>
+		<title>Layout 2: "Orange Denotes Fixed"</title>
+		<style type="text/css">
+.grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 1em;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #33FF72;
+  padding: 1em;
+}
+
+header, footer {
+  grid-column: 1 / 4;
+}
+
+
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+.grid > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+		.circle-divTOPLEFT {
+			background-color: #33ff43;
+			height: 125px;
+			width: 125px;
+			border-radius: 100%;
+			position: absolute;
+			top: 65px;
+			left: 7px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			}
+		.circle-divTOPRIGHT {
+			background-color: #33ff43;
+			height: 125px;
+			width: 125px;
+			border-radius: 100%;
+			position: absolute;
+			top: 65px;
+			right: 7px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			}	
+
+		
+		</style>
+		
+<div class="grid">
+<header>Layout 2: Fixed</header>
+<aside class="sidebar-left">Ipsum</aside>
+<article>Dorum</article>
+<aside class="sidebar-right">Alahm</aside>
+<footer>Heht</footer>
+</div>
+
+<div class="circle-divTOPRIGHT"><a href="Layout3.html">Layout 3</a></div>
+<div class="circle-divTOPLEFT"><a href="index.html">Return Home</a></div>
+
+</html>

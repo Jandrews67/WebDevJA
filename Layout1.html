@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Author: Joshua Andrews -->
+<!-- Course: CIS-376/University of North Alabama -->
+<html lang="en">
+<head>
+<title>Layout 1: "Pineapple Denotes Float"</title>
+<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		header {
+			background-color: #FFB233;
+			padding: 20px;
+			text-align: center;
+			font-size: 32px;
+			color: 33FF72 ;
+		}
+		h2 {
+			background-color: #f0f0f0;
+			padding: 2.5em;
+			position: relative;
+			text-align: center;
+			width: 100%;
+		}
+		nav {
+			float: left;
+			width: 30%;
+			background: #fffc33;
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 100%;
+			background-color: #33ff4e;
+		}
+
+
+		section:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+
+		footer {
+			background-color: #3da23e;
+			padding: 10px;
+		text-align: center;
+			color: white;
+		}
+
+		@media (max-width: 600px) {
+			nav, article {
+				width: 100%;
+			height: auto;
+			}
+		}
+
+		.circle-divTOPLEFT {
+			background-color: #33ff4e;
+			height: 125px;
+			width: 125px;
+			position: absolute;
+			top: 54px;
+			left: 7px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			}
+		.circle-divTOPRIGHT {
+			background-color: #33ff43;
+			height: 125px;
+			width: 125px;
+			position: absolute;
+			top: 54px;
+			right: 7px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			}
+
+</style>
+</head>
+<body>
+
+<h2>Layout 1: Float</h2>
+
+<header>
+  <h3>Lorem Ipsum</h3>
+</header>
+
+<section>
+
+  
+  <article>
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed euismod nisi porta. Sit amet purus gravida quis blandit. Augue mauris augue neque gravida in fermentum et sollicitudin.</p>
+
+  </article>
+</section>
+<div class="circle-divTOPRIGHT"><a href="Layout2.html">Layout 2</a></div>
+<div class="circle-divTOPLEFT"><a href="index.html">Return Home</a></div>
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
